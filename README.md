@@ -13,41 +13,41 @@
 ```bash
 $ export GITHUB_USERNAME=D-I-R  # Создание в окружении GITHUB_USERNAME переменной
 $ export GIST_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  # Создание в окружении GIST_TOKEN переменной
-$ alias edit=nano
+$ alias edit=nano  # создание псевдоним команды
 
 ```ShellSession
-$ mkdir -p ${GITHUB_USERNAME}/workspace
-$ cd ${GITHUB_USERNAME}/workspace
-$ pwd
-$ cd ..
-$ pwd
+$ mkdir -p ${GITHUB_USERNAME}/workspace # создае каталога
+$ cd ${GITHUB_USERNAME}/workspace  # переход в каталог
+$ pwd # вывод пути в текущий каталог
+$ cd ..  # переход в корневую директорию
+$ pwd # вывод пути в текущий каталог
 ```
 
 ```ShellSession
-$ mkdir -p workspace/tasks/
-$ mkdir -p workspace/projects/
-$ mkdir -p workspace/reports/
-$ cd workspace
+$ mkdir -p workspace/tasks/ # создание каталога
+$ mkdir -p workspace/projects/ # создание каталога
+$ mkdir -p workspace/reports/ # создание каталога
+$ cd workspace # смена текущего каталога
 ```
 
 ```ShellSession
 # Debian
-$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
-$ tar -xf node-v6.11.5-linux-x64.tar.xz
-$ rm -rf node-v6.11.5-linux-x64.tar.xz
-$ mv node-v6.11.5-linux-x64 node
+$ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz  # загрузка архива
+$ tar -xf node-v6.11.5-linux-x64.tar.xz # разархивация
+$ rm -rf node-v6.11.5-linux-x64.tar.xz # удаление архива
+$ mv node-v6.11.5-linux-x64 node # переименование файла
 ```
 
 ```ShellSession
-$ ls node/bin
-$ echo ${PATH}
-$ export PATH=${PATH}:`pwd`/node/bin
-$ echo ${PATH}
+$ ls node/bin # вывод на экран содержимого 
+$ echo ${PATH} # отображение содержимого переменной PATH
+$ export PATH=${PATH}:`pwd`/node/bin # присвоение переменной среды PATH новое значение
+$ echo ${PATH} # отображает содержимое переменной PATH
 $ mkdir scripts
-$ cat > scripts/activate<<EOF
+$ cat > scripts/activate<<EOF  # копирование в файл содержимого переменной PATH c измененным значением
 export PATH=\${PATH}:`pwd`/node/bin
 EOF
-$ source scripts/activate
+$ source scripts/activate # чтение и выполнение команды из файла в текущей среде
 ```
 
 ```ShellSession
