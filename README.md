@@ -52,7 +52,9 @@ $ mv node-v6.11.5-linux-x64 node # переименование файла
 
 ```ShellSession
 $ ls node/bin # вывод на экран содержимого 
+node  npm
 $ echo ${PATH} # отображение содержимого переменной PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
 $ export PATH=${PATH}:`pwd`/node/bin # присвоение переменной среды PATH новое значение
 $ echo ${PATH} # отображает содержимое переменной PATH
 $ mkdir scripts
@@ -64,7 +66,16 @@ $ source scripts/activate # чтение и выполнение команды 
 
 ```ShellSession
 $ npm install -g gistup # установка gistup
+/home/pcd08/D-I-R/workspace/node/bin/gistup -> /home/pcd08/D-I-R/workspace/node/lib/node_modules/gistup/bin/gistup
+/home/pcd08/D-I-R/workspace/node/bin/gistup-open -> /home/pcd08/D-I-R/workspace/node/lib/node_modules/gistup/bin/gistup-open
+/home/pcd08/D-I-R/workspace/node/bin/gistup-rename -> /home/pcd08/D-I-R/workspace/node/lib/node_modules/gistup/bin/gistup-rename
+/home/pcd08/D-I-R/workspace/node/lib
+└─┬ gistup@0.1.3 
+  ├─┬ optimist@0.3.7 
+  │ └── wordwrap@0.0.3 
+  └── queue-async@1.2.1 
 $ ls node/bin # вывод на экран содержимого
+gistup  gistup-open  gistup-rename  node  npm
 ```
 
 ```ShellSession
