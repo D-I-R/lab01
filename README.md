@@ -16,11 +16,13 @@ $ export GIST_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  # Создание
 $ alias edit=nano  # создание псевдоним команды
 
 ```ShellSession
-$ mkdir -p ${GITHUB_USERNAME}/workspace # создае каталога
-$ cd ${GITHUB_USERNAME}/workspace  # переход в каталог
+$ mkdir -p ${D-I-R}/workspace # создае каталога
+$ cd ${D-I-R}/workspace  # переход в каталог
 $ pwd # вывод пути в текущий каталог
-$ cd ..  # переход в корневую директорию
+/home/pcd08/D-I-R/workspace
+$ cd ..  # переход на директорию выше
 $ pwd # вывод пути в текущий каталог
+/home/pcd08/D-I-R
 ```
 
 ```ShellSession
