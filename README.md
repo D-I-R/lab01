@@ -4,17 +4,16 @@
 
 ## Tasks
 
-- [ ] 1. Ознакомиться со ссылками учебного материала
+- [ x ] 1. Ознакомиться со ссылками учебного материала
 - [ ] 2. Выполнить инструкцию учебного материала
 - [ ] 3. Составить отчет и отправить ссылку личным сообщением в **Slack**
 
 ## Tutorial
 
 ```bash
-$ export GITHUB_USERNAME=<имя_пользователя>
-$ export GIST_TOKEN=<сохраненный_токен>
-$ alias edit=<nano|vi|vim|subl>
-```
+$ export GITHUB_USERNAME=D-I-R  # Создание в окружении GITHUB_USERNAME переменной
+$ export GIST_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  # Создание в окружении GIST_TOKEN переменной
+$ alias edit=nano
 
 ```ShellSession
 $ mkdir -p ${GITHUB_USERNAME}/workspace
