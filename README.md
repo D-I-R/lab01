@@ -19,10 +19,10 @@ $ alias edit=nano  # создание псевдоним команды
 $ mkdir -p ${D-I-R}/workspace # создае каталога
 $ cd ${D-I-R}/workspace  # переход в каталог
 $ pwd # вывод пути в текущий каталог
-/home/pcd08/D-I-R/workspace
+#/home/pcd08/D-I-R/workspace
 $ cd ..  # переход на директорию выше
 $ pwd # вывод пути в текущий каталог
-/home/pcd08/D-I-R
+#/home/pcd08/D-I-R
 ```
 
 ```ShellSession
