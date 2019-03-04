@@ -24,7 +24,7 @@ $ pwd # вывод пути в текущий каталог
 ```
 
 ```ShellSession
-$ mkdir -p workspace/tasks/ # создание каталога
+$ mkdir -p workspace/tasks/  # создание каталога
 $ mkdir -p workspace/projects/ # создание каталога
 $ mkdir -p workspace/reports/ # создание каталога
 $ cd workspace # смена текущего каталога
