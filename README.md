@@ -51,12 +51,12 @@ $ source scripts/activate # чтение и выполнение команды 
 ```
 
 ```ShellSession
-$ npm install -g gistup
-$ ls node/bin
+$ npm install -g gistup # установка gistup
+$ ls node/bin # вывод на экран содержимого
 ```
 
 ```ShellSession
-$ cat > ~/.gistup.json <<EOF
+$ cat > ~/.gistup.json <<EOF # запись в файл токен
 {
   "token": "${GIST_TOKEN}"
 }
