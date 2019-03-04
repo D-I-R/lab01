@@ -35,6 +35,16 @@ $ cd workspace # смена текущего каталога
 ```ShellSession
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz  # загрузка архива
+--2019-03-04 18:41:12--  https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz
+Распознаётся nodejs.org (nodejs.org)… 104.20.22.46, 104.20.23.46, 2606:4700:10::6814:172e, ...
+Подключение к nodejs.org (nodejs.org)|104.20.22.46|:443... соединение установлено.
+HTTP-запрос отправлен. Ожидание ответа… 200 OK
+Длина: 9356460 (8,9M) [application/x-xz]
+Сохранение в: «node-v6.11.5-linux-x64.tar.xz»
+
+node-v6.11.5-linux-x64.tar. 100%[=========================================>]   8,92M  6,32MB/s    in 1,5s    
+
+2019-03-04 18:41:12 (6,32 MB/s) - «node-v6.11.5-linux-x64.tar.xz» сохранён [9356460/9356460]
 $ tar -xf node-v6.11.5-linux-x64.tar.xz # разархивация
 $ rm -rf node-v6.11.5-linux-x64.tar.xz # удаление архива
 $ mv node-v6.11.5-linux-x64 node # переименование файла
