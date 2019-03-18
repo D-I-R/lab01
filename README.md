@@ -15,7 +15,10 @@
 $ export GITHUB_USERNAME=D-I-R  # Создание в окружении GITHUB_USERNAME переменной
 $ export GIST_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  # Создание в окружении GIST_TOKEN переменной
 $ alias edit=nano  # создание псевдоним команды
+```
 
+
+Создаем каталог workspace, который будет рабочей областью
 ```ShellSession
 $ mkdir -p ${D-I-R}/workspace # создае каталога
 $ cd ${D-I-R}/workspace  # переход в каталог
@@ -26,6 +29,8 @@ $ pwd # вывод пути в текущий каталог
 #/home/pcd08/D-I-R
 ```
 
+
+В каталоге рабочей области создаем новые каталоги
 ```ShellSession
 $ mkdir -p workspace/tasks/  # создание каталога
 $ mkdir -p workspace/projects/ # создание каталога
@@ -33,6 +38,9 @@ $ mkdir -p workspace/reports/ # создание каталога
 $ cd workspace # смена текущего каталога
 ```
 
+
+
+Скачивание и распаковка node js
 ```ShellSession
 # Debian
 $ wget https://nodejs.org/dist/v6.11.5/node-v6.11.5-linux-x64.tar.xz  # загрузка архива
@@ -51,6 +59,9 @@ $ rm -rf node-v6.11.5-linux-x64.tar.xz # удаление архива
 $ mv node-v6.11.5-linux-x64 node # переименование файла
 ```
 
+
+
+Добавляем в PATH путь к скачанному файлу
 ```ShellSession
 $ ls node/bin # вывод на экран содержимого 
 node  npm
@@ -65,6 +76,9 @@ EOF
 $ source scripts/activate # чтение и выполнение команды из файла в текущей среде
 ```
 
+
+
+Устанавливаем пакет gistup в каталог скачанного файла
 ```ShellSession
 $ npm install -g gistup # установка gistup
 /home/pcd08/D-I-R/workspace/node/bin/gistup -> /home/pcd08/D-I-R/workspace/node/lib/node_modules/gistup/bin/gistup
@@ -79,6 +93,9 @@ $ ls node/bin # вывод на экран содержимого
 gistup  gistup-open  gistup-rename  node  npm
 ```
 
+
+
+Настройка конфига модуля gistup
 ```ShellSession
 $ cat > ~/.gistup.json <<EOF # запись в файл токен
 {
