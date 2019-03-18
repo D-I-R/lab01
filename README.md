@@ -10,7 +10,8 @@
 
 ## Tutorial
 
-```Устанавливаем переменные окружения, создаем альтернативную версию команды
+Устанавливаем переменные окружения, создаем альтернативную версию команды
+```
 $ export GITHUB_USERNAME=D-I-R  # Создание в окружении GITHUB_USERNAME переменной
 $ export GIST_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX  # Создание в окружении GIST_TOKEN переменной
 $ alias edit=nano  # создание псевдоним команды
